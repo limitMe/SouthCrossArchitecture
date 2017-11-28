@@ -24,6 +24,8 @@
 		2EE9870F1FCD06B100AAA43D /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE9870E1FCD06B100AAA43D /* Stevia.framework */; };
 		2EE987111FCD06B500AAA43D /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE987101FCD06B500AAA43D /* SwiftyBeaver.framework */; };
 		2EE987131FCD06B800AAA43D /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE987121FCD06B800AAA43D /* Swinject.framework */; };
+		2EE987181FCD131800AAA43D /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE987171FCD131800AAA43D /* LogManager.swift */; };
+		2EE9871A1FCD135100AAA43D /* CommonLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE987191FCD135100AAA43D /* CommonLogManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		2EE9870E1FCD06B100AAA43D /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
 		2EE987101FCD06B500AAA43D /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		2EE987121FCD06B800AAA43D /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		2EE987171FCD131800AAA43D /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		2EE987191FCD135100AAA43D /* CommonLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLogManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 		2E616DB51FB02E7D00166D52 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2EE987161FCD128000AAA43D /* Logs */,
 				2E616DC21FB0341400166D52 /* Dependencies.swift */,
 			);
 			path = Services;
@@ -249,6 +254,15 @@
 				2EE987081FCD069F00AAA43D /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EE987161FCD128000AAA43D /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				2EE987191FCD135100AAA43D /* CommonLogManager.swift */,
+				2EE987171FCD131800AAA43D /* LogManager.swift */,
+			);
+			path = Logs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,9 +431,11 @@
 				2E616DC31FB0341400166D52 /* Dependencies.swift in Sources */,
 				2E616D851FB029F100166D52 /* ViewController.swift in Sources */,
 				2E616DC11FB032FF00166D52 /* Styles.swift in Sources */,
+				2EE987181FCD131800AAA43D /* LogManager.swift in Sources */,
 				2E616DBD1FB0302600166D52 /* Constraints.swift in Sources */,
 				2E616DBF1FB0311400166D52 /* Configurations.swift in Sources */,
 				2E616D831FB029F000166D52 /* AppDelegate.swift in Sources */,
+				2EE9871A1FCD135100AAA43D /* CommonLogManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
