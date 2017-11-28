@@ -18,6 +18,12 @@
 		2E616DBF1FB0311400166D52 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E616DBE1FB0311400166D52 /* Configurations.swift */; };
 		2E616DC11FB032FF00166D52 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E616DC01FB032FF00166D52 /* Styles.swift */; };
 		2E616DC31FB0341400166D52 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E616DC21FB0341400166D52 /* Dependencies.swift */; };
+		2EE987091FCD069F00AAA43D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE987081FCD069F00AAA43D /* Alamofire.framework */; };
+		2EE9870B1FCD06A400AAA43D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE9870A1FCD06A400AAA43D /* Realm.framework */; };
+		2EE9870D1FCD06AE00AAA43D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE9870C1FCD06AE00AAA43D /* RxSwift.framework */; };
+		2EE9870F1FCD06B100AAA43D /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE9870E1FCD06B100AAA43D /* Stevia.framework */; };
+		2EE987111FCD06B500AAA43D /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE987101FCD06B500AAA43D /* SwiftyBeaver.framework */; };
+		2EE987131FCD06B800AAA43D /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE987121FCD06B800AAA43D /* Swinject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 		2E616DBE1FB0311400166D52 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		2E616DC01FB032FF00166D52 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		2E616DC21FB0341400166D52 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		2EE987081FCD069F00AAA43D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		2EE9870A1FCD06A400AAA43D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		2EE9870C1FCD06AE00AAA43D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2EE9870E1FCD06B100AAA43D /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
+		2EE987101FCD06B500AAA43D /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		2EE987121FCD06B800AAA43D /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE987091FCD069F00AAA43D /* Alamofire.framework in Frameworks */,
+				2EE9870B1FCD06A400AAA43D /* Realm.framework in Frameworks */,
+				2EE9870D1FCD06AE00AAA43D /* RxSwift.framework in Frameworks */,
+				2EE9870F1FCD06B100AAA43D /* Stevia.framework in Frameworks */,
+				2EE987111FCD06B500AAA43D /* SwiftyBeaver.framework in Frameworks */,
+				2EE987131FCD06B800AAA43D /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +109,7 @@
 				2E616D961FB029F100166D52 /* SouthCrossArchitectureTests */,
 				2E616DA11FB029F100166D52 /* SouthCrossArchitectureUITests */,
 				2E616D801FB029F000166D52 /* Products */,
+				2EE987071FCD069F00AAA43D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +238,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2EE987071FCD069F00AAA43D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EE987121FCD06B800AAA43D /* Swinject.framework */,
+				2EE987101FCD06B500AAA43D /* SwiftyBeaver.framework */,
+				2EE9870E1FCD06B100AAA43D /* Stevia.framework */,
+				2EE9870C1FCD06AE00AAA43D /* RxSwift.framework */,
+				2EE9870A1FCD06A400AAA43D /* Realm.framework */,
+				2EE987081FCD069F00AAA43D /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +261,7 @@
 				2E616D7B1FB029F000166D52 /* Sources */,
 				2E616D7C1FB029F000166D52 /* Frameworks */,
 				2E616D7D1FB029F000166D52 /* Resources */,
+				2EE987151FCD06DA00AAA43D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -347,6 +380,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EE987151FCD06DA00AAA43D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Stevia.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Stevia.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyBeaver.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E616D7B1FB029F000166D52 /* Sources */ = {
@@ -526,6 +587,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3EP3N28T5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SouthCrossArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.DianZhong.SouthCrossArchitecture;
@@ -541,6 +606,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3EP3N28T5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SouthCrossArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.DianZhong.SouthCrossArchitecture;
