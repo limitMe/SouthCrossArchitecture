@@ -1,0 +1,17 @@
+# IoC
+github "Swinject/Swinject"
+
+# MVVM
+github "ReactiveX/RxSwift"
+
+# Logging
+github "SwiftyBeaver/SwiftyBeaver"
+
+# UI
+github "s4cha/Stevia"
+
+# Networking
+github "Alamofire/Alamofire"
+
+# Database
+github "realm/realm-cocoa"
